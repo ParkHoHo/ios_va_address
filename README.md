@@ -1,2 +1,10 @@
 # ios_va_address
-For test where is the va in ios
+Test where is the va in ios
+
+<img src="./capture.png" width="200px"/> | <img src="./result.png" width="200px"/>
+
+In ios, the va start the 0x100000000.<br>
+Then, KASLR is calculate.<br>
+
+<br>
+$$ base address = vastartaddress + Kslide $$

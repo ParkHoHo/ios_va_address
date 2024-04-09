@@ -9,15 +9,26 @@ import SwiftUI
 
 
 struct ContentView: View {
+    @State private var strPointer = ""
+    
     var body: some View {
+        
         VStack {
+            Text(strPointer)
+            
             Button("Click"){
-                printPtr()
+                strPointer = String(cString: getStrPointerAsString())
             }
+            .padding()
+            
+            
+            
         }
         .padding()
     }
 }
+
+
 
 #Preview {
     ContentView()
